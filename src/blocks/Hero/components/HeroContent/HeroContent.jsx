@@ -1,5 +1,5 @@
 import React from 'react';
-import { DarkButton, LightButton } from 'blocks/Buttons';
+import { DarkButton } from 'blocks/Buttons';
 import dineLogo from 'assets/images/logo.svg';
 
 function HeroContent() {
