@@ -4,7 +4,7 @@ import dineLogo from 'assets/images/logo.svg';
 
 function HeroContent() {
   return (
-    <section className='bg-black py-6'>
+    <section className='bg-black py-6 pb-[10rem]'>
       <div className='flex flex-col'>
         {/* Logo */}
         <div className='text-center flex justify-center'>
@@ -23,7 +23,7 @@ function HeroContent() {
         </div>
         {/* Buttons */}
         <div className='flex flex-col justify-center px-10 mt-12'>
-                  <div className='flex justify-center'>
+          <div className='flex justify-center'>
             <DarkButton text='Button' />
           </div>
         </div>
