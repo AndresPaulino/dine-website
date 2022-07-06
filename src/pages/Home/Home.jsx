@@ -1,15 +1,21 @@
 import React from 'react';
 import Hero from '../../blocks/Hero/Hero';
-import HomeCard from './components/HomeCardFirst';
+import HomeCardFirst from './components/HomeCardFirst';
+import HomeCardSecond from './components/HomeCardSecond';
 
 function Home() {
   return (
     <div>
-      <section>
+      <section className='-z-10'>
         <Hero />
       </section>
-      <section className='z-10 flex flex-col justify-center'>
-        <HomeCard />
+      <section className='flex flex-col justify-center'>
+        <div className='z-20'>
+          <HomeCardFirst />
+        </div>
+        <div className='pt-0 pb-24'>
+          <HomeCardSecond />
+        </div>
       </section>
     </div>
   );
