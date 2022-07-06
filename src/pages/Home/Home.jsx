@@ -1,7 +1,8 @@
 import React from 'react';
-import Hero from '../../blocks/Hero/Hero';
+import Hero from 'blocks/Hero/Hero';
 import HomeCardFirst from './components/HomeCardFirst';
 import HomeCardSecond from './components/HomeCardSecond';
+import Menu from './components/Menu';
 
 function Home() {
   return (
@@ -13,9 +14,12 @@ function Home() {
         <div className='z-20'>
           <HomeCardFirst />
         </div>
-        <div className='pt-0 pb-24'>
+        <div className='pt-0 pb-32'>
           <HomeCardSecond />
         </div>
+      </section>
+      <section className=''>
+        <Menu />
       </section>
     </div>
   );
