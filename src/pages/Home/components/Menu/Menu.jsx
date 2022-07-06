@@ -1,6 +1,8 @@
 import React from 'react';
 import patternDivide from 'assets/images/patterns/pattern-divide.svg';
-import MenuCardOne from './components/MenuCards/MenuCardOne';
+import { MenuCardOne } from './components/MenuCards';
+import { MenuCardTwo } from './components/MenuCards';
+import { MenuCardThree } from './components/MenuCards';
 
 function Menu() {
   return (
@@ -15,8 +17,14 @@ function Menu() {
           revamped every season.
         </p>
       </div>
-      <div>
+      <div className='border-b border-b-secondary-clay'>
         <MenuCardOne />
+      </div>
+      <div className='border-b border-b-secondary-clay pt-6'>
+        <MenuCardTwo />
+      </div>
+      <div className='pt-6'>
+        <MenuCardThree />
       </div>
     </section>
   );
