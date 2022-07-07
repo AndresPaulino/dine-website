@@ -4,6 +4,7 @@ import HomeCardFirst from './components/HomeCardFirst';
 import HomeCardSecond from './components/HomeCardSecond';
 import Menu from './components/Menu';
 import TableEvents from './components/TableEvents';
+import CTA from './components/CTA';
 
 function Home() {
   return (
@@ -24,6 +25,9 @@ function Home() {
       </section>
       <section className='px-6 flex flex-col justify-center items-center py-24'>
         <TableEvents />
+      </section>
+      <section className='h-[328px]'>
+        <CTA />
       </section>
     </div>
   );
