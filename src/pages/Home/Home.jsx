@@ -5,6 +5,7 @@ import HomeCardSecond from './components/HomeCardSecond';
 import Menu from './components/Menu';
 import TableEvents from './components/TableEvents';
 import CTA from './components/CTA';
+import Footer from 'blocks/Footer';
 
 function Home() {
   return (
@@ -29,6 +30,9 @@ function Home() {
       <section className='h-[328px]'>
         <CTA />
       </section>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
