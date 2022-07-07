@@ -3,6 +3,7 @@ import Hero from 'blocks/Hero/Hero';
 import HomeCardFirst from './components/HomeCardFirst';
 import HomeCardSecond from './components/HomeCardSecond';
 import Menu from './components/Menu';
+import TableEvents from './components/TableEvents';
 
 function Home() {
   return (
@@ -20,6 +21,9 @@ function Home() {
       </section>
       <section className=''>
         <Menu />
+      </section>
+      <section>
+        <TableEvents />
       </section>
     </div>
   );
