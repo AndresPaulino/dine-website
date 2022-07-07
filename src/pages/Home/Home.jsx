@@ -22,7 +22,7 @@ function Home() {
       <section className=''>
         <Menu />
       </section>
-      <section>
+      <section className='px-6 flex flex-col justify-center items-center py-24'>
         <TableEvents />
       </section>
     </div>

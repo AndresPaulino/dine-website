@@ -4,13 +4,17 @@ import { windowSize } from 'utils';
 import { DarkButton } from 'blocks/Buttons';
 
 function TableEvents() {
-  const [activeTab, setActiveTab] = useState('familyGathering');
+  const [activeTab, setActiveTab] = useState('Family Gathering');
+
+  const handleActive = (eventParam) => {
+    setActiveTab(eventParam);
+  };
 
   return (
-    <section className='px-6'>
-      {activeTab === 'familyGathering' && <FamilyGathering handleActive={setActiveTab} />}
-      {activeTab === 'socialEvents' && <SocialEvents handleActive={setActiveTab} />}
-      {activeTab === 'specialEvents' && <SpecialEvents handleActive={setActiveTab} />}
+    <section className='w-full'>
+      {activeTab === 'Family Gathering' && <FamilyGathering active={activeTab} handleActive={handleActive} />}
+      {activeTab === 'Special Events' && <SpecialEvents active={activeTab} handleActive={handleActive} />}
+      {activeTab === 'Social Events' && <SocialEvents active={activeTab} handleActive={handleActive} />}
     </section>
   );
 }
